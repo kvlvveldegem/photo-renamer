@@ -93,5 +93,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AvalonLibrary">
+      <Version>2.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KvlvVeldegem.PhotoRenamer\KvlvVeldegem.PhotoRenamer.csproj">
+      <Project>{2F2E6334-316A-41F3-B5DB-DF87A1A6A932}</Project>
+      <Name>KvlvVeldegem.PhotoRenamer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
