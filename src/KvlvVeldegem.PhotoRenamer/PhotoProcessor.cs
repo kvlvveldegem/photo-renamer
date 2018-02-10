@@ -31,7 +31,7 @@ namespace KvlvVeldegem.PhotoRenamer
         private static string ComposeNewFileName(string photoPrefix, int counter, string photoUri)
         {
             var photoExtension = Path.GetExtension(photoUri).ToLower();
-            var newFileName = $"{photoPrefix} #{counter}{photoExtension}";
+            var newFileName = $"{photoPrefix} ({counter}){photoExtension}";
             return newFileName;
         }
     }
