@@ -42,6 +42,10 @@ namespace KvlvVeldegem.PhotoRenamer.UI
             else
             {
                 _photoProcessor.Rename(folderPath, AlbumName.Text);
+
+                AlbumName.Text = string.Empty;
+                StartProcessingButton.IsEnabled = false;
+
                 MessageBox.Show(this, "All photos were renamed succesfully!", "Rename finished", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
